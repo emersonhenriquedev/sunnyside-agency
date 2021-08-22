@@ -1,3 +1,16 @@
+:root {
+  --color-primary-light-1: #fe7867;
+  --color-primary-light-2: #fad400;
+  --color-primary-dark-1: #25564b;
+  --color-primary-dark-2: #19536b;
+  --color-primary-dark-3: #458c7e;
+  --color-neutral-1: #a7abae;
+  --color-neutral-2:  #fff;
+  --color-neutral-dark-1: #23303e;
+  --color-neutral-dark-2: #5a636c;
+  --color-neutral-dark-3: #818498;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,5 +27,91 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+header {
+  background-image: url(../images/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.heading__title {
+  font-family: Fraunces, serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: .4rem;
+  margin-top: 5rem;
+}
+
+.heading__icon {
+  height: 10rem;
+  width: 3rem;
+  position: absolute;
+  top: 20rem;
+  -webkit-animation: arrow-down 1.5s infinite;
+          animation: arrow-down 1.5s infinite;
+}
+
+.heading-primary {
+  font-family: Fraunces, serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-neutral-dark-1);
+}
+
+@-webkit-keyframes arrow-down {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
 }
 /*# sourceMappingURL=main.css.map */

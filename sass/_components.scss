@@ -1,0 +1,52 @@
+.navigation{}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  &__title {
+    font-family: Fraunces, serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: .4rem;
+    margin-top: 5rem;
+  }
+
+  &__icon {
+    height: 10rem;
+    width: 3rem;
+
+    position: absolute;
+    top: 20rem;
+
+    animation: arrow-down 1.5s infinite;
+
+  }
+}
+
+.heading-primary {
+  font-family: Fraunces, serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-neutral-dark-1);
+}
+
+@keyframes arrow-down {
+  0% {
+    
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+
+  100%{
+    transform: translateY(-1rem);
+  }
+}
