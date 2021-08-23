@@ -34,7 +34,11 @@ html {
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 3rem !important;
 }
 
 header {
@@ -82,11 +86,95 @@ header {
           animation: arrow-down 1.5s infinite;
 }
 
+.section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-container__text-container {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.section-container__image {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+}
+
 .heading-primary {
   font-family: Fraunces, serif;
   font-size: 3.5rem;
   font-weight: 800;
   color: var(--color-neutral-dark-1);
+}
+
+.paragraph {
+  font-family: Barlow, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--color-neutral-dark-3);
+  text-align: center;
+}
+
+.button:link, .button:visited {
+  text-decoration: none;
+  font-family: Fraunces, serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--color-neutral-dark-1);
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.button:hover {
+  -webkit-transform: rotate(-5deg) scale(1.09);
+          transform: rotate(-5deg) scale(1.09);
+}
+
+.button:hover::after {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.button:active::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.button::after {
+  content: '';
+  color: var(--color-primary-light-2);
+  opacity: .35;
+  border: 1rem solid;
+  position: absolute;
+  border: .5rem solid;
+  position: absolute;
+  top: 1.2rem;
+  left: -.5rem;
+  width: 13rem;
+  border-radius: 2rem;
+  z-index: -1;
 }
 
 @-webkit-keyframes arrow-down {
