@@ -108,6 +108,49 @@
   }
 }
 
+.services {
+  display: flex;
+  flex-direction: column;
+
+}
+.service {
+  // background-image: url('../images/image-graphic-design.jpg');
+  background-position: top ;
+  background-repeat: no-repeat;
+  height: 56rem;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__text-container {
+    padding: 0 1rem;
+
+  }
+
+  &__title {
+    font-family: Fraunces, serif;
+    color: var(--color-primary-dark-1);
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  &__description {
+    font-family: Barlow, sans-serif;
+    color: var(--color-primary-dark-1);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  &:nth-child(2) &__title,
+  &:nth-child(2) &__description  {
+    color: var(--color-primary-dark-2);
+  }
+
+}
+
 @keyframes arrow-down {
   0% {
     

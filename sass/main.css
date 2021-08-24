@@ -41,6 +41,10 @@ html {
   margin-top: 3rem !important;
 }
 
+.u-margin-bottom-big {
+  margin-bottom: 4.5rem !important;
+}
+
 header {
   background-image: url(../images/image-header.jpg);
   background-position: center;
@@ -175,6 +179,57 @@ header {
   width: 13rem;
   border-radius: 2rem;
   z-index: -1;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service {
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 56rem;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.service__text-container {
+  padding: 0 1rem;
+}
+
+.service__title {
+  font-family: Fraunces, serif;
+  color: var(--color-primary-dark-1);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.service__description {
+  font-family: Barlow, sans-serif;
+  color: var(--color-primary-dark-1);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.service:nth-child(2) .service__title,
+.service:nth-child(2) .service__description {
+  color: var(--color-primary-dark-2);
 }
 
 @-webkit-keyframes arrow-down {
