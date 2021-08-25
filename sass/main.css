@@ -41,6 +41,10 @@ html {
   margin-top: 3rem !important;
 }
 
+.u-margin-top-small {
+  margin-top: 1rem !important;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 4.5rem !important;
 }
@@ -230,6 +234,87 @@ header {
 .service:nth-child(2) .service__title,
 .service:nth-child(2) .service__description {
   color: var(--color-primary-dark-2);
+}
+
+.testimonials {
+  padding: 6rem 4rem;
+}
+
+.testimonials h3 {
+  font-family: Fraunces, serif;
+  text-transform: uppercase;
+  color: var(--color-neutral-1);
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+
+.testimonials__container {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7rem;
+}
+
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Barlow, sans-serif;
+}
+
+.testimonial__author-photo {
+  border-radius: 50%;
+  width: 25%;
+}
+
+.testimonial__description {
+  color: var(--color-neutral-dark-2);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.testimonial__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__author-name {
+  font-family: Fraunces, serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--color-neutral-dark-1);
+}
+
+.testimonial__author-occupation {
+  color: var(--color-neutral-1);
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 @-webkit-keyframes arrow-down {
