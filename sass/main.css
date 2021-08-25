@@ -317,6 +317,18 @@ header {
   font-weight: 900;
 }
 
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__project {
+  width: 50%;
+}
+
 @-webkit-keyframes arrow-down {
   0% {
   }

@@ -211,6 +211,15 @@
   }
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__project {
+    width: 50%;
+  }
+}
+
 @keyframes arrow-down {
   0% {
     
