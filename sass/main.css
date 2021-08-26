@@ -1,11 +1,12 @@
 :root {
   --color-primary-light-1: #fe7867;
   --color-primary-light-2: #fad400;
+  --color-primary-light-3: #90d4c5;
   --color-primary-dark-1: #25564b;
   --color-primary-dark-2: #19536b;
   --color-primary-dark-3: #458c7e;
   --color-neutral-1: #a7abae;
-  --color-neutral-2:  #fff;
+  --color-neutral-2:  #fffbf8;
   --color-neutral-dark-1: #23303e;
   --color-neutral-dark-2: #5a636c;
   --color-neutral-dark-3: #818498;
@@ -55,6 +56,58 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
+}
+
+.footer {
+  background-color: var(--color-primary-light-3);
+  padding: 5rem 3.5rem;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  fill: --var(--color-primary-dark-3);
+}
+
+.footer__navigation {
+  color: var(--color-primary-dark-3);
+}
+
+.footer__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__navigation-list li {
+  list-style: none;
+}
+
+.footer__navigation-list li:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.footer__navigation-list li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: Barlow, sans-serif;
+}
+
+.footer__social-icon:not(:last-child) {
+  margin-right: 2.3rem;
 }
 
 .heading {
@@ -110,6 +163,7 @@ header {
           order: 2;
   padding: 5rem 2rem;
   text-align: center;
+  background-color: var(--color-neutral-2);
 }
 
 .section-container__image {

@@ -7,3 +7,45 @@ header {
 }
 
 body {}
+
+.footer {
+  background-color: var(--color-primary-light-3);
+  padding: 5rem 3.5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    fill: --var(--color-primary-dark-3);
+  }
+
+
+  &__navigation {
+    color: var(--color-primary-dark-3);
+  }
+
+  &__navigation-list {
+    display: flex;
+    }
+
+  &__navigation-list li {        
+    list-style: none;
+  }
+
+  &__navigation-list li:not(:last-child) {
+    margin-right: 5rem;
+  }
+
+  &__navigation-list li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: Barlow, sans-serif;
+  }
+
+  &__social-icon:not(:last-child) {
+    margin-right: 2.3rem;
+  }
+}
