@@ -1,20 +1,29 @@
-.navigation{
+.navigation {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  // padding: 1% 1%;
+  padding: 4rem 2rem;
 
-  height: 4.6rem;
+  // height: 4.6rem;
+  height: var(--navigation-height);
 
   position: relative;
+  // width: 100%;
+
+  &__logo {
+    width: 16.5rem;
+    height: 3rem;
+  }
 
   &__btn {
     display: flex;
-    padding: .5rem 1rem;
+    // padding: .5rem 1rem;
     font-size: 1rem;
     border: none;
     background: none;
     cursor: pointer;
     gap: .5rem;
+    height: 3rem;
   }
 
   &__btn-icon {
@@ -22,6 +31,10 @@
     display: block;
     border-top: solid .2rem currentColor;
     width: 2rem;
+  }
+
+  &__btn-icon.active {
+    opacity: .5;
   }
 
   &__btn-icon::after, &__btn-icon::before {
@@ -47,23 +60,25 @@
     
     background-color: #fff;
     box-shadow: 0 .1rem .7rem rgba(0,0,0,.2);
-    width: 92%;
-    margin-top: 6.6rem;
+    // width: 92%;
+    width: calc(100% - var(--navigation-horizontal-padding));
+    // margin-top: 6.6rem;
+    margin-top: calc(var(--navigation-height) - 1.5rem);
     
     padding: 3.5rem 0;
-    
+  
     z-index: 100;
+    animation: menu-animation .5s ;
   }
 
   &__menu.active::before {
     position: absolute;
-    top: -2.5rem;
+    top: -2.4rem;
     right: 0;
+    // right: var(--navigation-horizontal-padding);
     content: '';
     display: block;
     background-color: #fff;
-    // background-color: red;
-    // border: solid 1px #000;
     height: 2.5rem;
     width: 2.5rem;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -328,5 +343,15 @@
 
   100%{
     transform: translateY(-1rem);
+  }
+}
+
+@keyframes menu-animation {
+  0%{}
+  50% {
+    transform: translateY(4rem);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
