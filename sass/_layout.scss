@@ -43,6 +43,18 @@ body {}
     text-decoration: none;
     font-size: 1.6rem;
     font-family: Barlow, sans-serif;
+    
+    &:hover {
+      color: var(--color-neutral-2);
+    }
+  }
+
+  &__social-icon {
+    cursor: pointer;
+    transition: transform .5s;
+    &:hover {
+      transform: translateY(-.5rem);
+    }
   }
 
   &__social-icon:not(:last-child) {
