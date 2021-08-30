@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![screenshot](screenshot.png)
 
 ### Links
 
@@ -48,4 +48,4 @@ I improved my css skills with flexbox, mobile first, animations, BEM methodology
 ## Author
 
 - Frontend Mentor - [@emersonhenriquedev](https://www.frontendmentor.io/profile/emersonhenriquedev)
-- E-mail - [e.macedohenrique@gmail.com](e.macedohenrique@gmail.com)
+- Linkedin - [linkedin](https://www.linkedin.com/in/emerson-henrique-macedo-9397a2186/)
